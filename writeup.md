@@ -42,7 +42,7 @@
 
 - lane lines are not stable
 
-- to remove noise by more tuning can be done with blur and canny transformation
+- more tuning can be done with blur and canny transformation to reduce noise
 
 - linear regression does not deal with curves
 
