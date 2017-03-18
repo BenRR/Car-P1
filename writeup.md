@@ -1,0 +1,55 @@
+#**Finding Lane Lines on the Road** 
+
+##Writeup
+
+### Reflection
+
+###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+
+####My pipeline consisted of 5 steps. 
+
+- First, I converted the images to grayscale
+
+- Then apply gaussian_blur
+
+- Then apply canny transformation
+
+- Then select region of interest
+
+- Then draw hough_lines
+
+- Then apply lines on original image
+
+####Changes in draw_lines() function
+
+- First, I split lines by slop to left and right
+    
+- Then I calculate top and bottom Y coordinate in left lane lines
+
+- Then I calculate top and bottom Y coordinate in right lane lines
+
+- Then select the min top and max bottom Y from left and right lines
+    
+- Then I calculte mean coordinates(x1,y1,x2,y2) for both left lane lines
+
+- Then I calculte mean coordinates(x1,y1,x2,y2) for both right lane lines
+
+- Then I use mean (x1,y1,x2,y2) calcualte linear regression coefficient for both left and right    
+
+- Then I calculate top and bottom X coordinates by applying the cofficient to top and bottom Y coddinate for both left and right
+
+- Then draw lines using top and bottom X Y coordinates
+
+###2. Identify potential shortcomings with your current pipeline
+
+- region of interest is fixed and has to be manually tuned for different size of images
+
+- lane lines are not stable
+
+- more tuning can be done with blur and canny transformation
+
+###3. Suggest possible improvements to your pipeline
+
+- auto select region of interest from the first frame of video
+- make line drawing more stable and smooth
+- avoid lane lines intersect
