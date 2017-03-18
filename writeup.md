@@ -30,11 +30,7 @@
 
 - Then select the min top and max bottom Y from left and right lines
     
-- Then I calculte mean coordinates(x1,y1,x2,y2) for left lane lines
-
-- Then I calculte mean coordinates(x1,y1,x2,y2) for right lane lines
-
-- Then I use mean (x1,y1,x2,y2) calcualte linear regression coefficients for both left and right    
+- Then I calcualte linear regression coefficients for both left and right using all the lines   
 
 - Then I calculate top and bottom X coordinates by applying the cofficients to top and bottom Y coddinate for both left and right
 
@@ -46,12 +42,14 @@
 
 - lane lines are not stable
 
-- more tuning can be done with blur and canny transformation
+- to remove noise by more tuning can be done with blur and canny transformation
 
-- linear regression does not deal with curve
+- linear regression does not deal with curves
 
 ### 3. Suggest possible improvements to your pipeline
 
 - auto select region of interest from the first frame of video
+
 - make line drawing more stable and smooth
+
 - avoid lane lines intersect
