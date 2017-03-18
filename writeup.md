@@ -48,6 +48,8 @@
 
 - more tuning can be done with blur and canny transformation
 
+- linear regression does not deal with curve
+
 ### 3. Suggest possible improvements to your pipeline
 
 - auto select region of interest from the first frame of video
