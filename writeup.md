@@ -1,12 +1,12 @@
-#**Finding Lane Lines on the Road** 
+**Finding Lane Lines on the Road** 
 
-##Writeup
+## Writeup
 
 ### Reflection
 
-###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-####My pipeline consisted of 6 steps. 
+#### My pipeline consisted of 6 steps. 
 
 - First, I converted the images to grayscale
 
@@ -20,7 +20,7 @@
 
 - Then apply lines on original image
 
-####Changes in draw_lines() function
+#### Changes in draw_lines() function
 
 - First, I split lines by slop to left and right
     
@@ -40,7 +40,7 @@
 
 - Then draw lines using top and bottom X Y coordinates
 
-###2. Identify potential shortcomings with your current pipeline
+### 2. Identify potential shortcomings with your current pipeline
 
 - region of interest is fixed and has to be manually tuned for different size of images
 
@@ -48,7 +48,7 @@
 
 - more tuning can be done with blur and canny transformation
 
-###3. Suggest possible improvements to your pipeline
+### 3. Suggest possible improvements to your pipeline
 
 - auto select region of interest from the first frame of video
 - make line drawing more stable and smooth
