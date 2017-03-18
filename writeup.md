@@ -6,7 +6,7 @@
 
 ###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-####My pipeline consisted of 5 steps. 
+####My pipeline consisted of 6 steps. 
 
 - First, I converted the images to grayscale
 
@@ -30,13 +30,13 @@
 
 - Then select the min top and max bottom Y from left and right lines
     
-- Then I calculte mean coordinates(x1,y1,x2,y2) for both left lane lines
+- Then I calculte mean coordinates(x1,y1,x2,y2) for left lane lines
 
-- Then I calculte mean coordinates(x1,y1,x2,y2) for both right lane lines
+- Then I calculte mean coordinates(x1,y1,x2,y2) for right lane lines
 
-- Then I use mean (x1,y1,x2,y2) calcualte linear regression coefficient for both left and right    
+- Then I use mean (x1,y1,x2,y2) calcualte linear regression coefficients for both left and right    
 
-- Then I calculate top and bottom X coordinates by applying the cofficient to top and bottom Y coddinate for both left and right
+- Then I calculate top and bottom X coordinates by applying the cofficients to top and bottom Y coddinate for both left and right
 
 - Then draw lines using top and bottom X Y coordinates
 
